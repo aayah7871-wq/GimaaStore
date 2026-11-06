@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن - Gima Store</title>
+
+    <link rel="stylesheet" href="about.css">
+
+    <style>
+        .page-buttons {
+            text-align: center;
+            padding: 12px;
+            background-color: #f0e7fa;
+        }
+
+        .page-buttons button {
+            background-color: #7044a3;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            margin: 5px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .page-buttons button:hover {
+            background-color: #573080;
+        }
+
+        body {
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode {
+            background-color: #222 !important;
+            color: #f5f5f5 !important;
+        }
+
+        body.dark-mode header,
+        body.dark-mode nav,
+        body.dark-mode footer {
+            background-color: #333 !important;
+            color: white !important;
+        }
+
+        body.dark-mode .page-buttons {
+            background-color: #292929;
+        }
+
+        body.dark-mode .hero,
+        body.dark-mode .card,
+        body.dark-mode .feature {
+            background-color: #383838 !important;
+            color: white !important;
+        }
+
+        body.dark-mode h2,
+        body.dark-mode h3,
+        body.dark-mode h4,
+        body.dark-mode p {
+            color: inherit;
+        }
+
+        body.dark-mode nav a {
+            color: #ffc1d8;
+        }
+
+        .store-image {
+            display: block;
+            width: 300px;
+            max-width: 90%;
+            height: 300px;
+            object-fit: cover;
+            margin: 20px auto;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 data-ar="Gima Store 🛍️" data-en="Gima Store 🛍️">
+            Gima Store 🛍️
+        </h1>
+
+        <p data-ar="أناقتك تبدأ من هنا 💜"
+           data-en="Your style starts here 💜">
+            أناقتك تبدأ من هنا 💜
+        </p>
+    </header>
+
+    <div class="page-buttons">
+        <button type="button" id="languageButton">🌐 English</button>
+        <button type="button" id="themeButton">🌙 الوضع الداكن</button>
+    </div>
+
+    <nav>
+        <a href="home.html"
+           data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+
+        <a href="products.html"
+           data-ar="المنتجات" data-en="Products">المنتجات</a>
+        <a href="conected.html"
+           data-ar="تواصل معنا" data-en="conect Us">تواصل معنا</a>
+        <a href="logout.html"
+           data-ar="تسجيل الخروج" data-en="Log Out">تسجيل الخروج</a>
+    </nav>
+
+    <img src="Yaya.jpg" class="store-image" alt="Gima Store">
+
+    <section class="hero">
+        <div class="heart">💜</div>
+
+        <h2 data-ar="من نحن؟" data-en="Who Are We?">من نحن؟</h2>
+
+        <p
+            data-ar="أهلاً بيكم في Gima Store، وجهتكم للتسوق والأناقة. هدفنا نساعدكم تختاروا الملابس والإطلالات المناسبة ليكم بكل سهولة، مع تجربة تسوق ممتعة ومميزة."
+            data-en="Welcome to Gima Store, your destination for shopping and style. Our goal is to help you easily choose the right clothes and outfits while enjoying a special shopping experience.">
+            أهلاً بيكم في Gima Store، وجهتكم للتسوق والأناقة.
+            هدفنا نساعدكم تختاروا الملابس والإطلالات المناسبة
+            ليكم بكل سهولة، مع تجربة تسوق ممتعة ومميزة.
+        </p>
+    </section>
+
+    <main class="container">
+
+        <section class="card">
+            <h3 data-ar="✨ قصتنا" data-en="✨ Our Story">✨ قصتنا</h3>
+
+            <p
+                data-ar="Gima Store هو متجر إلكتروني للملابس والأزياء، صممناه عشان يكون التسوق أسهل وأجمل. بنهتم بعرض المنتجات بطريقة واضحة ومنظمة، عشان تقدروا تتعرفوا على القطع وتختاروا المناسب ليكم."
+                data-en="Gima Store is an online clothing and fashion store designed to make shopping easier and more enjoyable. We display products clearly so you can explore and choose what suits you.">
+                Gima Store هو متجر إلكتروني للملابس والأزياء،
+                صممناه عشان يكون التسوق أسهل وأجمل.
+                بنهتم بعرض المنتجات بطريقة واضحة ومنظمة،
+                عشان تقدروا تتعرفوا على القطع وتختاروا المناسب ليكم.
+            </p>
+        </section>
+
+        <section class="card">
+            <h3 data-ar="🎯 رؤيتنا" data-en="🎯 Our Vision">🎯 رؤيتنا</h3>
+
+            <p
+                data-ar="نسعى لتقديم تجربة تسوق بسيطة وأنيقة، تجمع بين سهولة الاستخدام وجمال التصميم، وتساعد كل زبون يلقى الستايل البناسب ذوقه."
+                data-en="We aim to provide a simple and stylish shopping experience that combines ease of use with beautiful design and helps every customer find their style.">
+                نسعى لتقديم تجربة تسوق بسيطة وأنيقة،
+                تجمع بين سهولة الاستخدام وجمال التصميم،
+                وتساعد كل زبون يلقى الستايل البناسب ذوقه.
+            </p>
+        </section>
+
+        <section class="features-section">
+            <h3 data-ar="💎 شنو البميز متجرنا؟"
+                data-en="💎 What Makes Our Store Special?">
+                💎 شنو البميز متجرنا؟
+            </h3>
+
+            <div class="feature">
+                <span>👗</span>
+
+                <h4 data-ar="تشكيلة متنوعة"
+                    data-en="Variety of Products">
+                    تشكيلة متنوعة
+                </h4>
+
+                <p data-ar="منتجات وملابس تناسب أذواق مختلفة."
+                   data-en="Clothes and products for different tastes.">
+                    منتجات وملابس تناسب أذواق مختلفة.
+                </p>
+            </div>
+
+            <div class="feature">
+                <span>🛍️</span>
+
+                <h4 data-ar="تسوق سهل" data-en="Easy Shopping">
+                    تسوق سهل
+                </h4>
+
+                <p
+                    data-ar="تصفح المنتجات وانتقل بين الصفحات بسهولة."
+                    data-en="Browse products and navigate between pages easily.">
+                    تصفح المنتجات وانتقل بين الصفحات بسهولة.
+                </p>
+            </div>
+
+            <div class="feature">
+                <span>💜</span>
+
+                <h4 data-ar="تصميم أنيق" data-en="Elegant Design">
+                    تصميم أنيق
+                </h4>
+
+                <p
+                    data-ar="ألوان عصرية وتجربة مريحة أثناء التصفح."
+                    data-en="Modern colors and a comfortable browsing experience.">
+                    ألوان عصرية وتجربة مريحة أثناء التصفح.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p data-ar="© 2026 Gima Store | جميع الحقوق محفوظة ☁️"
+           data-en="© 2026 Gima Store | All rights reserved ☁️">
+            © 2026 Gima Store | جميع الحقوق محفوظة ☁️
+        </p>
+    </footer>
+
+    <script src="home.js"></script>
+
+</body>
+</html>

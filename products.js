@@ -1,0 +1,78 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const languageButton = document.getElementById("languageButton");
+
+    function setLanguage(language) {
+        const isArabic = language === "ar";
+
+        document.documentElement.lang = language;
+        document.documentElement.dir = isArabic ? "rtl" : "ltr";
+        document.querySelectorAll("[data-ar][data-en]").forEach(function (element) {
+            element.textContent = isArabic
+                ? element.getAttribute("data-ar") || ""
+                : element.getAttribute("data-en") || "";
+        });
+        document.querySelectorAll(
+            "[data-ar-placeholder][data-en-placeholder]"
+        ).forEach(function (element) {
+            if (
+                element instanceof HTMLInputElement ||
+                element instanceof HTMLTextAreaElement
+            ) {
+                element.placeholder = isArabic
+                    ? element.getAttribute("data-ar-placeholder") || ""
+                    : element.getAttribute("data-en-placeholder") || "";
+            }
+        });
+        if (languageButton) {
+            languageButton.textContent = isArabic
+                ? "🌐 English"
+                : "🌐 العربية";
+        }
+
+        try {
+            localStorage.setItem("gimaLanguage", language);
+        } catch (error) {
+            console.error("تعذر حفظ اللغة:", error);
+        }
+    }
+
+    if (languageButton) {
+        languageButton.addEventListener("click", function () {
+            const currentLanguage = document.documentElement.lang || "ar";
+
+            setLanguage(currentLanguage === "ar" ? "en" : "ar");
+        });}
+    const themeButton = document.getElementById("themeButton");
+    function setTheme(theme) {
+        const isDark = theme === "dark";
+        document.body.classList.toggle("dark-mode", isDark);
+        if (themeButton) {
+            themeButton.textContent = isDark
+                ? "☀️ الوضع الفاتح"
+                : "🌙 الوضع الداكن";
+        }
+
+        try {
+            localStorage.setItem("gimaTheme", theme);
+        } catch (error) {
+            console.error("تعذر حفظ الإضاءة:", error);
+        }}
+
+    if (themeButton) {
+        themeButton.addEventListener("click", function () {
+            const isDark = document.body.classList.contains("dark-mode");
+
+            setTheme(isDark ? "light" : "dark");
+        });  }
+    let savedLanguage = "ar";
+    let savedTheme = "light";
+    try {
+        savedLanguage = localStorage.getItem("gimaLanguage") || "ar";
+        savedTheme = localStorage.getItem("gimaTheme") || "light";
+    } catch (error) {
+        console.error("تعذر استرجاع الإعدادات:", error);
+    }
+    setLanguage(savedLanguage === "en" ? "en" : "ar");
+    setTheme(savedTheme === "dark" ? "dark" : "light");
+
+});

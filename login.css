@@ -1,0 +1,135 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eadcf8, #c8a5e8);
+    color: #44205e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    transition: 0.4s;
+}
+
+/* الأزرار العلوية */
+
+.top-buttons {
+    position: absolute;
+    top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.top-buttons button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #743ca0;
+    color: white;
+}
+
+
+.login-container {
+    background: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px #0002;
+}
+
+.login-container h1 {
+    color: #743ca0;
+    margin-bottom: 20px;
+}
+
+.login-container h2 {
+    margin-bottom: 12px;
+}
+
+.login-container p {
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 12px;
+}
+
+input {
+    padding: 13px;
+    border: 1px solid #c7a5df;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+input:focus {
+    border-color: #743ca0;
+}
+
+.login-button {
+    background: #743ca0;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+
+.warning-message {
+    position: absolute;
+    top: 65px;
+    background: #fff3cd;
+    color: #805800;
+    padding: 15px;
+    border-radius: 10px;
+    max-width: 90%;
+    text-align: center;
+}
+
+
+
+body.dark-mode {
+    background: linear-gradient(135deg, #171321, #39234d);
+    color: white;
+}
+
+.dark-mode .login-container {
+    background: #292033;
+    color: white;
+}
+
+.dark-mode input {
+    background: #40354b;
+    color: white;
+    border-color: #79539a;
+}
+
+.dark-mode input::placeholder {
+    color: #ddd;
+}
+
+.dark-mode .login-container h1 {
+    color: #d6a8ff;
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا | غيمة ستور</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f3fc;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        header {
+            background-color: #7044a3;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        header p {
+            line-height: 1.8;
+        }
+
+        .page-buttons {
+            text-align: center;
+            padding: 12px;
+            background-color: #f0e7fa;
+        }
+
+        .page-buttons button {
+            width: auto;
+            margin: 5px;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 20px;
+            background-color: #7044a3;
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        nav {
+            background-color: #573080;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin: 8px 12px;
+        }
+
+        nav a:hover {
+            color: #e5c8ff;
+        }
+
+        .container {
+            background-color: white;
+            width: 85%;
+            max-width: 600px;
+            margin: 35px auto;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px #d5c5e8;
+        }
+
+        h2 {
+            color: #7044a3;
+            text-align: center;
+        }
+
+        .container p {
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 7px;
+            border: 1px solid #c9b5df;
+            border-radius: 7px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .send-button {
+            width: 100%;
+            background-color: #7044a3;
+            color: white;
+            padding: 13px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 7px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        .send-button:hover {
+            background-color: #573080;
+        }
+
+        footer {
+            background-color: #573080;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        /* الوضع الداكن */
+        body.dark-mode {
+            background-color: #222;
+            color: #f5f5f5;
+        }
+
+        body.dark-mode .page-buttons {
+            background-color: #292929;
+        }
+
+        body.dark-mode .container {
+            background-color: #383838;
+            color: white;
+            box-shadow: 0 4px 12px #111;
+        }
+
+        body.dark-mode h2 {
+            color: #d7b4ff;
+        }
+
+        body.dark-mode input,
+        body.dark-mode textarea {
+            background-color: #292929;
+            color: white;
+            border-color: #765b91;
+        }
+
+        body.dark-mode input::placeholder,
+        body.dark-mode textarea::placeholder {
+            color: #ccc;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 92%;
+                padding: 18px;
+            }
+
+            nav a {
+                margin: 6px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 data-ar="☁️ غيمة ستور" data-en="☁️ Gima Store">
+            ☁️ غيمة ستور
+        </h1>
+
+        <p data-ar="سعيدين بزيارتك، ونحن دائماً في خدمتك"
+           data-en="We are happy to have you. We are always here to help.">
+            سعيدين بزيارتك، ونحن دائماً في خدمتك
+        </p>
+    </header>
+
+    <div class="page-buttons">
+        <button type="button" id="languageButton">🌐 English</button>
+        <button type="button" id="themeButton">🌙 الوضع الداكن</button>
+    </div>
+<nav>
+        <a href="home.html"
+           data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+
+        <a href="products.html"
+           data-ar="المنتجات" data-en="Products">المنتجات</a>
+           
+          <a href="offer.html"
+           data-ar="العروض" data-en="Offers">العروض</a>
+
+  <a href="about.html"
+           data-ar="من نحن" data-en="about">العروض</a>
+<a href="logout.html"
+           data-ar="تسجيل خروج" data-en="logout">العروض</a>
+
+
+
+    </nav>
+
+    <div class="container">
+        <h2 data-ar="تواصل معنا 💜" data-en="Contact Us 💜">
+            تواصل معنا 💜
+        </h2>
+
+        <p
+            data-ar="عندك استفسار عن منتجاتنا أو محتاجة مساعدة؟ أرسلي لينا رسالتك، ويسعدنا التواصل معاك."
+            data-en="Have a question about our products or need help? Send us a message. We will be happy to help.">
+            عندك استفسار عن منتجاتنا أو محتاجة مساعدة؟
+            أرسلي لينا رسالتك، ويسعدنا التواصل معاك.
+        </p>
+
+        <form id="contactForm" method="post">
+
+            <label for="name"
+                   data-ar="الاسم الكامل:"
+                   data-en="Full Name:">الاسم الكامل:</label>
+
+            <input type="text" id="name" name="name"
+                   placeholder="اكتبي اسمك"
+                   data-ar-placeholder="اكتبي اسمك"
+                   data-en-placeholder="Enter your name"
+                   required>
+
+            <label for="phone"
+                   data-ar="رقم الهاتف:"
+                   data-en="Phone Number:">رقم الهاتف:</label>
+
+            <input type="tel" id="phone" name="phone"
+                   placeholder="أدخلي رقم هاتفك"
+                   data-ar-placeholder="أدخلي رقم هاتفك"
+                   data-en-placeholder="Enter your phone number"
+                   required>
+
+            <label for="email"
+                   data-ar="البريد الإلكتروني:"
+                   data-en="Email Address:">البريد الإلكتروني:</label>
+
+            <input type="email" id="email" name="email"
+                   placeholder="example@gmail.com"
+                   data-ar-placeholder="example@gmail.com"
+                   data-en-placeholder="example@gmail.com">
+
+            <label for="subject"
+                   data-ar="موضوع الرسالة:"
+                   data-en="Message Subject:">موضوع الرسالة:</label>
+
+            <input type="text" id="subject" name="subject"
+                   placeholder="موضوع استفسارك"
+                   data-ar-placeholder="موضوع استفسارك"
+                   data-en-placeholder="Enter your subject"
+                   required>
+
+            <label for="message"
+                   data-ar="رسالتك:"
+                   data-en="Your Message:">رسالتك:</label>
+
+            <textarea id="message" name="message"
+                      placeholder="اكتبي رسالتك هنا..."
+                      data-ar-placeholder="اكتبي رسالتك هنا..."
+                      data-en-placeholder="Write your message here..."
+                      required></textarea>
+
+            <button type="submit" class="send-button"
+                    data-ar="إرسال الرسالة"
+                    data-en="Send Message">
+                إرسال الرسالة
+            </button>
+        
+
+        </form>
+    </div>
+
+    <footer>
+        <p data-ar="© 2026 غيمة ستور ☁️ | جميع الحقوق محفوظة"
+           data-en="© 2026 Gima Store ☁️ | All rights reserved">
+            © 2026 غيمة ستور ☁️ | جميع الحقوق محفوظة
+        </p>
+    </footer>
+
+    
+    <script src="home.js"></script>
+
+</body>
+</html>

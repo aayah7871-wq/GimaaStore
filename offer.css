@@ -1,0 +1,158 @@
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #fff7fa;
+        color: #593746;
+        transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+        background: white;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid #f1dce4;
+    }
+
+    header h1 {
+        color: #a83f65;
+        margin: 0;
+    }
+
+    button {
+        background: #a83f65;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 20px;
+        margin: 8px 4px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    button:hover {
+        background: #c35c80;
+    }
+
+    nav {
+        background: white;
+        padding: 15px 8px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #693b4d;
+        font-weight: bold;
+    }
+
+    .offer {
+        width: 92%;
+        max-width: 850px;
+        margin: 35px auto;
+        padding: 30px 20px;
+        border-radius: 25px;
+        text-align: center;
+        background: linear-gradient(135deg, #f4d6e2, #fff0e8);
+        box-shadow: 0 8px 25px #8c3c5715;
+    }
+
+    .winter {
+        font-size: 65px;
+        margin: 10px;
+    }
+
+    .offer h2 {
+        color: #913955;
+        font-size: 30px;
+    }
+
+    .offer p {
+        font-size: 18px;
+        line-height: 2;
+    }
+
+    .discount {
+        display: inline-block;
+        background: #a83f65;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 18px;
+        font-size: 28px;
+        font-weight: bold;
+        margin: 15px;
+    }
+
+    .btn {
+        display: inline-block;
+        background: #a83f65;
+        color: white;
+        text-decoration: none;
+        border: none;
+        padding: 13px 25px;
+        border-radius: 25px;
+        margin: 10px 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background: #c35c80;
+    }
+
+    .note {
+        font-size: 13px !important;
+        color: #806b74;
+    }
+
+    footer {
+        margin-top: 40px;
+        padding: 25px;
+        text-align: center;
+        background: #49303b;
+        color: white;
+    }
+
+    /* الوضع الداكن */
+    body.dark-mode {
+        background: #222;
+        
+        
+        
+        color: #f5f5f5;
+    }
+
+    body.dark-mode header,
+    body.dark-mode nav {
+        background: #333;
+        border-color: #555;
+    }
+
+    body.dark-mode header h1 {
+        color: #ffc1d8;
+    }
+
+    body.dark-mode nav a {
+        color: #f5d5e1;
+    }
+
+    body.dark-mode .offer {
+        background: linear-gradient(135deg, #49303b, #333);
+        color: white;
+    }
+
+    body.dark-mode .offer h2 {
+        color: #ffc1d8;
+    }
+
+    body.dark-mode .note {
+        color: #ddd;
+    }
+
+    body.dark-mode footer {
+        background: #111;
+    }
+</style>

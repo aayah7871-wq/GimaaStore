@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>إنشاء حساب - Gima Store</title>
+
+    <link rel="stylesheet" href="new.css">
+</head>
+
+<body>
+
+    <div class="top-buttons">
+
+        <button onclick="changeLanguage()" id="languageBtn">
+            English
+        </button>
+
+        <button onclick="changeTheme()" id="themeBtn">
+            🌙
+        </button>
+
+    </div>
+
+    <div class="container">
+
+        <h1 id="logo">☁️ Gima Store</h1>
+
+        <h2 id="title">إنشاء حساب جديد</h2>
+
+        <p id="welcome">
+            مرحباً بك في متجر غيمة 💜
+        </p>
+
+        <form action="login.html" method="POST" id="registerForm">
+
+            <label id="userLabel" for="username">
+                البريد الإلكتروني أو رقم الهاتف
+            </label>
+
+            <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="أدخل البريد الإلكتروني أو رقم الهاتف"
+                required
+            >
+
+            <label id="passLabel" for="password">
+                كلمة المرور
+            </label>
+
+            <div class="password-box">
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="أدخل كلمة المرور"
+                    minlength="6"
+                    required
+                >
+
+                <button
+                    type="button"
+                    onclick="showPassword('password', this)">
+                    👁
+                </button>
+
+            </div>
+
+            <label id="confirmLabel" for="confirmPassword">
+                تأكيد كلمة المرور
+            </label>
+
+            <div class="password-box">
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="أعد إدخال كلمة المرور"
+                    minlength="6"
+                    required
+                >
+
+                <button
+                    type="button"
+                    onclick="showPassword('confirmPassword', this)">
+                    👁
+                </button>
+
+            </div>
+            <button
+                type="submit"
+                class="register-btn"
+                id="registerBtn">
+
+                إنشاء حساب
+
+            </button>
+
+        </form>
+        <p class="login-link" id="loginLink">
+            هل لديك حساب بالفعل؟
+            <a href="new.php">تسجيل الدخول</a>
+        </p>
+
+        <p class="footer" id="footer">
+            أهلاً بك في عالم غيمة 💜
+        </p>
+
+    </div>
+
+    <script src="new.js"></script>
+
+</body>
+</html>

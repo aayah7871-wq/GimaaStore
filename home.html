@@ -1,0 +1,88 @@
+<?php
+session_start();
+
+if (!isset($_SESSION["user_id"])) {
+    header("Location: login.php");
+    exit;
+}
+?>
+
+<!DOCTYPE html><html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Gima Store | الرئيسية</title>
+<link rel="stylesheet" href="home.css">
+
+</head><body><header>
+    <h1>♡ Gima Store ♡</h1>
+
+    <p
+        data-ar="أناقتك تبدأ من هنا ✨"
+        data-en="Your elegance starts here ✨">
+        أناقتك تبدأ من هنا ✨
+    </p>
+
+    <button id="languageButton">🌐 English</button>
+    <button id="themeButton">🌙 الوضع الداكن</button>
+
+    <br>
+  <video width="400" height="400" controls>
+    <source src="Yayo.mp4" type="video/mp4">
+    المتصفح لا يدعم تشغيل الفيديو.
+  </video>
+</header>
+
+      <nav>
+        <a href="about.html"
+           data-ar="من نحن " data-en="about">الرئيسية</a>
+
+        <a href="products.html"
+           data-ar="المنتجات" data-en="Products">المنتجات</a>
+
+        <a href="offer.html"
+           data-ar="العروض" data-en="Offers">العروض</a>
+
+        <a href="conected.html"   
+          data-ar="تواصل معنا" data-en="conect Us">تواصل معنا</a>
+        <a href="logout.html"
+           data-ar="تسجيل الخروج" data-en="Log Out">تسجيل الخروج</a>
+    </nav>
+<section class="hero">
+    <h2
+        data-ar="مرحباً بكِ في Gima Store 🌸"
+        data-en="Welcome to Gima Store 🌸">
+        مرحباً بكِ في Gima Store 🌸
+    </h2>
+
+    <p
+        data-ar="اكتشفي أحدث صيحات الموضة والملابس العصرية. اختاري إطلالتك المفضلة واستمتعي بتجربة تسوق سهلة ومميزة في متجرنا."
+        data-en="Discover the latest fashion trends and modern clothing. Choose your favorite style and enjoy an easy shopping experience.">
+        اكتشفي أحدث صيحات الموضة والملابس العصرية.
+        اختاري إطلالتك المفضلة واستمتعي بتجربة تسوق
+        سهلة ومميزة في متجرنا.
+    </p>
+
+    <a class="btn" href="offer.html"
+       data-ar="اكتشفي العروض"
+       data-en="Discover Offers">
+        اكتشفي العروض
+    </a>
+</section>
+
+<h2 class="section-title"
+    data-ar="اكتشفي متجرنا ♡"
+    data-en="Discover Our Store ♡">
+    اكتشفي متجرنا ♡
+</h2>
+
+<p
+    data-ar="في Gima Store نهتم بتقديم ملابس عصرية تناسب مختلف الأذواق، ونسعى لجعل تجربة التسوق ممتعة وسهلة لكل زبائننا."
+    data-en="At Gima Store, we offer modern clothing for different tastes and aim to make shopping easy and enjoyable for everyone.">
+    في Gima Store نهتم بتقديم ملابس عصرية تناسب مختلف الأذواق،
+    ونسعى لجعل تجربة التسوق ممتعة وسهلة لكل زبائننا.
+</p>
+
+<script src="home.js"></script>
+
+</body>
+</html>
